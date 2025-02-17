@@ -1,0 +1,76 @@
+/* 全局設定 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: read-write;}
+
+/* 讓每個餐點區塊在同一行 */
+.food-item {
+    display: flex;
+    align-items: center; /* 讓內容垂直對齊 */
+    justify-content: space-between;
+    flex-wrap: wrap; /* 允許備註換行 */
+    padding: 5px;
+    background: whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* 餐點名稱（標籤） */
+.food-item label {
+    font-size: 16px;
+    font-weight: bold;
+    width: 100px; /* 統一寬度，確保對齊 */
+    text-align: left;
+}
+
+/* 數量調整區域（按鈕 + 輸入框） */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* 按鈕與輸入框的間距 */
+}
+
+/* 確保按鈕與輸入框對齊 */
+button [type="button"]{
+    background-color: lightgray;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px; /* 讓按鈕高度與輸入框一致 */
+}
+
+/* 數量輸入框 */
+input[type="number"] {
+    width: 40px;
+    height: 25px; /* 高度與按鈕一致 */
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* 備註選單（換行顯示） */
+.food-item select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.table {
+  font-size: 16px;
+}
+
+button[type="submit"]{
+  background-color: gray;
+  float: right;
+}
